@@ -36,8 +36,7 @@ public class CountryCountroller extends Action {
 		boolean registration = cd.SaveCountries(cf);
 		if (registration) {
 			return mapping.findForward("success"); 
-			//return (ActionForward) v;
-					//
+			
 		}else{
 
 		return mapping.findForward("falied");
